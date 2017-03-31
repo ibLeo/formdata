@@ -20,5 +20,5 @@ textnonce = "0.5"
 log = "0.3"
 encoding = "0.2"
 clippy = { version = "0.0", optional = true }
-mime_multipart = formdata = { git = "ssh://git@github.com/ibLeo/mime_multipart.git", branch = "master" }
+mime_multipart = { git = "ssh://git@github.com/ibLeo/mime_multipart.git", branch = "master" }
 # "0.5"
