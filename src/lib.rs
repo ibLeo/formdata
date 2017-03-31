@@ -99,7 +99,7 @@ pub use mime_multipart::FilePart;
 pub use mime_multipart::generate_boundary;
 
 /// Parse MIME `multipart/form-data` information from a stream as a `FormData`.
-pub fn read_formdata<S: Read>(stream: &mut S, headers: &Headers) -> Result<FormData, Error>
+pub fn read_formdata<S: Read>(stream: &mut S, headers: &Headers) -> Result<FormData, Error> where S: std::fmt::Debug
 {
     let nodes = try!(mime_multipart::read_multipart_body(stream, headers, false));
 
